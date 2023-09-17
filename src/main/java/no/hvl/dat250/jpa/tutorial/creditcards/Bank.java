@@ -5,7 +5,9 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -18,5 +20,5 @@ public class Bank {
     private String name;
 
     @OneToMany(mappedBy = "bank")
-    private List<CreditCard> creditCards;
+    private Set<CreditCard> creditCards = new HashSet<>();
 }

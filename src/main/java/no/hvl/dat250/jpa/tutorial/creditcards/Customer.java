@@ -17,9 +17,9 @@ public class Customer {
     private String name;
 
     @ManyToMany(cascade = CascadeType.PERSIST)
-    private List<Address> addresses;
+    private Set<Address> addresses = new HashSet<>();
 
     @ManyToMany
-    private List<CreditCard> creditCards;
+    private Set<CreditCard> creditCards = new HashSet<>();
 
 }

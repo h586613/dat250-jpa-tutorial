@@ -1,7 +1,9 @@
 package no.hvl.dat250.jpa.tutorial.creditcards;
 
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -20,6 +22,6 @@ public class Address {
     private Integer number;
 
     @ManyToMany(mappedBy = "addresses")
-    private List<Customer> customers;
+    private Set<Customer> customers = new HashSet<>();
 
 }
