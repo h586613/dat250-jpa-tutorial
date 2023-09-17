@@ -14,10 +14,12 @@ public class Todo {
     private String description;
 
     public void setSummary(String summary) {
+
         this.summary = summary;
     }
 
     public void setDescription(String description) {
+
         this.description = description;
     }
 
