@@ -22,6 +22,6 @@ public class Address {
     private Integer number;
 
     @ManyToMany(mappedBy = "addresses")
-    private Set<Customer> customers = new HashSet<>();
+    private Set<Customer> owners = new HashSet<>();
 
 }

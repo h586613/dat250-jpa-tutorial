@@ -9,13 +9,12 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-
 public class Pincode {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String pincode;
+    private String code;
     private Integer count;
 
 }

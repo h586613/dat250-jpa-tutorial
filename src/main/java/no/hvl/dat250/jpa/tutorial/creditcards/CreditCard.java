@@ -22,7 +22,7 @@ public class CreditCard {
     private Integer balance;
 
     @ManyToOne
-    private Bank bank;
+    private Bank owningBank;
 
     @ManyToOne
     private Pincode pincode;
